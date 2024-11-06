@@ -1,14 +1,14 @@
-import './App.css'
-//import Button from './components/Button'
-import Link from './components/Link'
+import ButtonExample from "./components/Button";
+import LinkExample from "./components/Link";
+import { vstack } from "../styled-system/patterns";
 
 function App() {
-
   return (
-    <>
-    <Link></Link>
-    </>
-  )
+    <main className={vstack()}>
+      <ButtonExample/>
+      <LinkExample/>
+    </main>
+  );
 }
 
-export default App
+export default App;
