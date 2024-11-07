@@ -1,7 +1,8 @@
 import { cva } from "../../styled-system/css";
 import { styled } from "../../styled-system/jsx";
-import { vstack, hstack } from "../../styled-system/patterns";
+import { vstack } from "../../styled-system/patterns";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import Card from "./Card";
 
 const button = cva({
   base: {
@@ -55,60 +56,49 @@ const Button = styled("button", button);
 
 const ButtonExample = () => {
   return (
-    <section
-      className={vstack({
-        m: "2rem",
-        p: "2em",
-        shadow: "0em 0em 0.5em 0em lightGrey",
-        borderColor: "white",
-        rounded: "1em",
-        w: "fit-content",
-      })}
-    >
-      <div className={hstack()}>
-        <div className={vstack()}>
-          <Button variant="primary">Button</Button>
-          <Button variant="secondary">Button</Button>
-          <Button variant="tertiary">Button</Button>
-        </div>
-        <div className={vstack()}>
-          <Button variant="primary" disabled>
-            Button
-          </Button>
-          <Button variant="secondary" disabled>
-            Button
-          </Button>
-          <Button variant="tertiary" disabled>
-            Button
-          </Button>
-        </div>
-        <div className={vstack()}>
-          <Button variant="primary">
-            <FavoriteIcon />
-            <p>Button</p>
-          </Button>
-          <Button variant="secondary">
-            <FavoriteIcon />
-            <p>Button</p>
-          </Button>
-          <Button variant="tertiary">
-            <FavoriteIcon />
-            <p>Button</p>
-          </Button>
-        </div>
-        <div className={vstack()}>
-          <Button variant="primary" icon="icon">
-            <FavoriteIcon />
-          </Button>
-          <Button variant="secondary" icon="icon">
-            <FavoriteIcon />
-          </Button>
-          <Button variant="tertiary" icon="icon">
-            <FavoriteIcon />
-          </Button>
-        </div>
+    <Card>
+      <div className={vstack()}>
+        <Button variant="primary">Button</Button>
+        <Button variant="secondary">Button</Button>
+        <Button variant="tertiary">Button</Button>
       </div>
-    </section>
+      <div className={vstack()}>
+        <Button variant="primary" disabled>
+          Button
+        </Button>
+        <Button variant="secondary" disabled>
+          Button
+        </Button>
+        <Button variant="tertiary" disabled>
+          Button
+        </Button>
+      </div>
+      <div className={vstack()}>
+        <Button variant="primary">
+          <FavoriteIcon />
+          <p>Button</p>
+        </Button>
+        <Button variant="secondary">
+          <FavoriteIcon />
+          <p>Button</p>
+        </Button>
+        <Button variant="tertiary">
+          <FavoriteIcon />
+          <p>Button</p>
+        </Button>
+      </div>
+      <div className={vstack()}>
+        <Button variant="primary" icon="icon">
+          <FavoriteIcon />
+        </Button>
+        <Button variant="secondary" icon="icon">
+          <FavoriteIcon />
+        </Button>
+        <Button variant="tertiary" icon="icon">
+          <FavoriteIcon />
+        </Button>
+      </div>
+    </Card>
   );
 };
 

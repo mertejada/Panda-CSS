@@ -21,7 +21,8 @@ export default defineConfig({
       tokens: {
         colors: {
           blue: { value: '#005391' },
-          secondaryBlue: { value: '#00679D' },
+          secondaryBlue: { value: '#2F7BB1' },
+          lightBlue: { value: '#8BB3D0'},
           orange: { value: '#E3AB3D' },
           secondaryOrange: { value: '#E58D4F' },
           black:{value: '#1F1F1F'},

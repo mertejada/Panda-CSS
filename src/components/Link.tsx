@@ -1,7 +1,7 @@
 import { styled } from "../../styled-system/jsx";
 import { cva, css } from "../../styled-system/css";
-import { hstack } from "../../styled-system/patterns";
 import LinkIcon from "@mui/icons-material/Link";
+import Card from "./Card";
 
 const link = cva({
   base: {
@@ -41,17 +41,7 @@ const Link = styled("a", link);
 
 function LinkExample() {
   return (
-    <section
-      className={hstack({
-        m: "2rem",
-        p: "2em",
-        shadow: "0em 0em 0.5em 0em lightGrey",
-        borderColor: "white",
-        rounded: "1em",
-        w: "fit-content",
-        gap: '1em'
-      })}
-    >
+    <Card>
       <Link>
         <LinkIcon />
         <p>Link</p>
@@ -66,12 +56,12 @@ function LinkExample() {
       </Link>
       <Link
         variant="white"
-        className={css({ bgColor: 'black', p: '0 0.5rem', rounded: '0.5em' })}
+        className={css({ bgColor: "black", p: "0 0.5rem", rounded: "0.5em" })}
       >
         <LinkIcon />
         <p>Link</p>
       </Link>
-    </section>
+    </Card>
   );
 }
 

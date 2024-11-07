@@ -5,8 +5,8 @@ import { vstack } from "../styled-system/patterns";
 function App() {
   return (
     <main className={vstack()}>
-      <ButtonExample/>
-      <LinkExample/>
+        <ButtonExample />
+        <LinkExample />
     </main>
   );
 }
