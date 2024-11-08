@@ -21,10 +21,10 @@ const link = cva({
   variants: {
     variant: {
       primary: {
-        color: "orange",
+        color: "mainOrange",
       },
       secondary: {
-        color: "primaryBlue",
+        color: "mainBlue",
       },
       grey: {
         color: "grey",
