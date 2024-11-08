@@ -24,7 +24,7 @@ const link = cva({
         color: "orange",
       },
       secondary: {
-        color: "blue",
+        color: "primaryBlue",
       },
       grey: {
         color: "grey",

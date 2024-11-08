@@ -29,18 +29,18 @@ const button = cva({
   variants: {
     variant: {
       primary: {
-        bgColor: "orange",
+        bgColor: "mainOrange",
         color: "white",
         shadow: "0em 0em 0.05em 0.01em lightGrey",
       },
       secondary: {
         //border: '1px solid', borderColor: 'orange',
         bgColor: "white",
-        color: "orange",
+        color: "mainOrange",
         shadow: "0em 0em 0.2em 0em lightGrey",
       },
       tertiary: {
-        color: "orange",
+        color: "mainOrange",
         p: "0.5em",
       },
     },

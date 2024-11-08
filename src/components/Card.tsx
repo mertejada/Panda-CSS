@@ -1,26 +1,24 @@
+import { styled } from "../../styled-system/jsx";
 import { wrap } from "../../styled-system/patterns";
+import React from "react";
 
-type CardProps = {
-  color?: string;
-  children: React.ReactNode;
-};
+// Type for props of the styled `div` element
+type CardProps = React.ComponentProps<typeof styled.div>;
 
-
-
-const Card = ({ color, children }: CardProps) => {
+const Card: React.FC<CardProps> = (props) => {
   return (
-    <div
+    <styled.div
       className={wrap({
-        bgColor: color,
-        shadow: '0em 0em 0.3em 0 lightGrey',
-        p: '2rem',
-        m: '1rem',
-        rounded: '1em',
-        w: 'fit-content'
+        shadow: "0em 0em 0.2em lightGrey",
+        p: "1.5em",
+        m: "0.5rem",
+        rounded: "1em",
+        w: "fit-content",
       })}
-    >
-      {children}
-    </div>
+      px="4"
+      py="3"
+      {...props}
+    />
   );
 };
 
