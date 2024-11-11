@@ -6,12 +6,13 @@ import Card from "./Card";
 
 const iconStyles = cva({
   base: {
-    p: "0.5em",
     rounded: "5em",
+    p: "0.5em",
   },
   variants: {
     variant: {
       primary: {
+        rounded: "0",
         color: "mainOrange",
       },
       secondary: {
@@ -32,12 +33,12 @@ const iconStyles = cva({
   },
 });
 
-const Icon = styled("div", iconStyles);
+export const Icon = styled("div", iconStyles);
 
 const IconExample = () => {
   return (
     <div className={hstack({})}>
-      <Card>
+      <Card variant='flatWhite'>
         <Icon variant="primary">
           <VerifiedUserOutlined />
         </Icon>
@@ -48,7 +49,7 @@ const IconExample = () => {
           <VerifiedUserOutlined />
         </Icon>
       </Card>
-      <Card bgColor='mediumBlue'>
+      <Card variant= 'shadowedGrey'>
         <Icon variant="white">
           <VerifiedUserOutlined />
         </Icon>

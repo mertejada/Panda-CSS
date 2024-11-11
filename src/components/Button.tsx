@@ -52,7 +52,7 @@ const button = cva({
   },
 });
 
-const Button = styled("button", button);
+export const Button = styled("button", button);
 
 const ButtonExample = () => {
   return (

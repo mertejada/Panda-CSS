@@ -33,6 +33,10 @@ export default defineConfig({
           lightGrey:{value: '#C0C0C0'},
           smoked: { value: '#F0F0F0'},
           white: { value: '#FEFEFE'},
+          //Status
+          statusGreen:{value: '#82BD64'},
+          statusRed:{value: '#F03D3E'},
+          statusOrange:{value: '#E58D4F'}
         },
       }
     }

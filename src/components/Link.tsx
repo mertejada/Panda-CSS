@@ -24,7 +24,7 @@ const link = cva({
         color: "mainOrange",
       },
       secondary: {
-        color: "mainBlue",
+        color: "mediumBlue",
       },
       grey: {
         color: "grey",
@@ -56,7 +56,7 @@ function LinkExample() {
       </Link>
       <Link
         variant="white"
-        className={css({ bgColor: "black", p: "0 0.5rem", rounded: "0.5em" })}
+        className={css({ bgColor: "mediumBlue", p: "0 0.5rem", rounded: "0.5em" })}
       >
         <LinkIcon />
         <p>Link</p>
